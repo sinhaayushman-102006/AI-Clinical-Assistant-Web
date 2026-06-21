@@ -1,0 +1,4 @@
+- [x] Reduce hero headline size/spacing to avoid excessively large letters (update HeroSection.tsx and/or LandingPage.tsx)
+- [x] Add back the missing stars background image using stars.png (update HeroSection.tsx and/or ParticleBackground.tsx and/or index.css)
+- [x] Ensure background layers have correct z-index and opacity so stars are visible behind text/animations
+- [x] Quick build/test (pnpm/vite) to ensure no TypeScript/CSS issues

@@ -1,21 +1,27 @@
-Here's a professional and technical `README.md` suitable for your GitHub repository:
-
 # AI Clinical Assistant Web
 
 ## Overview
 
-AI Clinical Assistant Web is a full-stack healthcare intelligence platform designed to assist healthcare professionals with clinical decision support, medical knowledge retrieval, symptom assessment, and patient data analysis. The application integrates modern web technologies and AI-driven capabilities to provide accurate, context-aware insights through a scalable and responsive interface.
+AI Clinical Assistant Web is a full-stack healthcare intelligence platform designed to assist healthcare professionals and users with AI-powered clinical decision support, symptom assessment, medical knowledge retrieval, and healthcare information analysis.
+
+The platform integrates modern web technologies with large language models to deliver accurate, context-aware responses through an intuitive and scalable web interface.
+
+## Live Demo
+
+**Application URL:**
+https://ai-clinical-assistant-web-1.onrender.com
 
 ## Features
 
-* AI-powered clinical assistance and decision support
-* Intelligent symptom assessment and analysis
-* Medical knowledge retrieval and contextual search
-* Interactive clinical dashboard
-* Real-time data processing and visualization
-* Secure and scalable client-server architecture
-* Responsive user interface optimized for multiple devices
-* Modular and maintainable codebase
+* AI-powered clinical assistance
+* Symptom assessment and analysis
+* Medical knowledge retrieval
+* Interactive healthcare dashboard
+* Context-aware AI responses
+* Responsive and modern user interface
+* Secure API integration
+* Scalable client-server architecture
+* Real-time healthcare information access
 
 ## Technology Stack
 
@@ -33,21 +39,22 @@ AI Clinical Assistant Web is a full-stack healthcare intelligence platform desig
 * Express.js
 * TypeScript
 
-### Development Tools
+### AI Integration
 
-* PNPM
-* Git & GitHub
-* ESLint
-* Prettier
+* OpenRouter API
+* Large Language Models (LLMs)
+* Context-aware response generation
 
 ## Project Structure
 
 ```text
-client/        Frontend application
-server/        Backend services and APIs
-shared/        Shared types and utilities
-dist/          Production build output
-patches/       Package patches and fixes
+ai-clinical-assistant-web/
+├── client/          # Frontend application
+├── server/          # Backend services and APIs
+├── shared/          # Shared types and utilities
+├── dist/            # Production build output
+├── public/          # Static assets
+└── package.json
 ```
 
 ## Installation
@@ -60,7 +67,7 @@ patches/       Package patches and fixes
 ### Clone Repository
 
 ```bash
-git clone https://github.com/your-username/AI-Clinical-Assistant-Web.git
+git clone https://github.com/sinhaayushman-102006/AI-Clinical-Assistant-Web.git
 cd AI-Clinical-Assistant-Web
 ```
 
@@ -70,18 +77,17 @@ cd AI-Clinical-Assistant-Web
 pnpm install
 ```
 
-### Configure Environment
+### Environment Variables
 
-Create a `.env` file in the root directory and configure the required environment variables.
+Create a `.env` file in the project root:
 
 ```env
-PORT=5000
-API_KEY=your_api_key
+VITE_OPENROUTER_API_KEY=your_openrouter_api_key
 ```
 
 ## Running the Application
 
-### Development Mode
+### Development
 
 ```bash
 pnpm dev
@@ -101,32 +107,34 @@ pnpm start
 
 ## Architecture
 
-The application follows a modern client-server architecture:
+The application follows a modular client-server architecture:
 
 * React-based frontend for user interaction
-* RESTful backend services built with Node.js and Express
-* Shared TypeScript models for type safety across the application
-* AI integration layer for clinical intelligence and knowledge retrieval
-* Modular component-based design for maintainability and scalability
-
-## Security Considerations
-
+* Express.js backend for API handling
+* Shared TypeScript models for type safety
+* AI integration layer for healthcare intelligence
 * Environment-based configuration management
-* Secure API communication
-* Input validation and sanitization
-* Separation of client and server responsibilities
+
+## Security
+
+* API keys managed through environment variables
+* Sensitive credentials excluded from version control
+* Client-server separation for secure request handling
+* Input validation and sanitization mechanisms
 
 ## Future Enhancements
 
 * Electronic Health Record (EHR) integration
-* Advanced clinical analytics
-* Role-based access control
+* Clinical report generation
+* Advanced medical analytics
 * Multi-model AI orchestration
-* Medical report generation
-* Real-time collaboration features
+* User authentication and authorization
+* Healthcare workflow automation
+
+## Disclaimer
+
+This application is intended for educational, research, and healthcare technology demonstration purposes only. It should not be used as a substitute for professional medical advice, diagnosis, or treatment.
 
 ## License
 
-This project is developed for educational, research, and healthcare technology innovation purposes. Ensure compliance with applicable healthcare regulations and data privacy standards before deploying in production environments.
-
-You can save this directly as `README.md` and replace `your-username` with your actual GitHub username.
+This project is licensed under the MIT License.
